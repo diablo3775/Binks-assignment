@@ -31,10 +31,10 @@ to see the application running.
 
 ## Features
 
-- User authentication using email and password
+- User is authenticated using email and password
 - User feed where users can view posts from other users
-- Ability to create, update, and delete posts
-- Ability to like and comment on posts
+- User can create, update, and delete posts
+- User can like and comment on posts
 
 
 ## Additional Details
