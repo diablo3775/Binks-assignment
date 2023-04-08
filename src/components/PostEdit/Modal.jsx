@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { storage } from "../../firebase";
 import React, { useEffect, useState } from 'react'
 import { removeGmailSuffix } from '../../utils/helpers';
-import { CircularProgress } from '@material-ui/core';
+import { Audio } from 'react-loader-spinner'
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { CameraIcon } from '@heroicons/react/solid';
 
@@ -121,7 +121,10 @@ export default function Modal({ setShowModal, message, id, setPosts, posts, imag
                         <input type="file" onChange={(e) => setNewImage(e.target.files[0])} className="hidden" />
                       </label>
                       <button className='px-2 bg-blue-500 p-2 rounded-full text-white' type="submit">Update</button>
-                      {isLoading && <CircularProgress />}
+                      {isLoading && <div className="spinner-container">
+                        <div className="loading-spinner">
+                        </div>
+                      </div>}
                     </form>
                   </div>
                 </div>

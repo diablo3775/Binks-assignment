@@ -2,7 +2,6 @@ import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import React, { useState } from 'react'
 import { storage } from "../../firebase";
-import { CircularProgress } from '@material-ui/core';
 import { CameraIcon, EmojiHappyIcon, VideoCameraIcon } from '@heroicons/react/outline';
 import { useUserAuth } from "../../context/UserAuthContext"
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
@@ -101,7 +100,10 @@ const InputBox = () => {
             onChange={(e) => setName(e.target.value)}
           />
           <button className='px-2 sm:px-3 md:px-2 bg-blue-500 p-1 sm:p-2 md:p-3 rounded-full text-white ml-2' type="submit">Submit</button>
-          {loading && <CircularProgress />}
+          {loading && <div className="spinner-container">
+            <div className="loading-spinner">
+            </div>
+          </div>}
         </form>
       </div>
 
