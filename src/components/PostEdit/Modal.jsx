@@ -3,7 +3,6 @@ import { v4 as uuidv4 } from 'uuid';
 import { storage } from "../../firebase";
 import React, { useEffect, useState } from 'react'
 import { removeGmailSuffix } from '../../utils/helpers';
-import { Audio } from 'react-loader-spinner'
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { CameraIcon } from '@heroicons/react/solid';
 
