@@ -24,7 +24,7 @@ to see the application running.
 
 **Client:** React,TailwindCSS
 
-**Storage:** Firebase REST Api
+**Api CRUD:** Firebase REST Api
 
 **Authentication:** Firebase Api 
 
@@ -35,5 +35,11 @@ to see the application running.
 - User feed where users can view posts from other users
 - Ability to create, update, and delete posts
 - Ability to like and comment on posts
+
+
+## Additional Details
+
+- The application uses React as the frontend library and TailwindCSS for styling.
+-  Firebase REST API is used to store the posts created by users and retrieve the data to display it on the user's feed. Firebase REST API is also used to handle user authentication and authorization, which makes the application more secure and reliable.
 
 
